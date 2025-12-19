@@ -19,7 +19,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9' # install the python version needed
+          python-version: '3.12' # install the python version needed
           
       - name: install python packages
         run: |
@@ -35,8 +35,10 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+          if ! git diff --quiet status.log; then
+            git add status.log
+            git commit -m "updated logs"
+          fi
           
       - name: push changes
         run: git push 
