@@ -337,3 +337,5 @@
 2025-12-19 19:32:52,681 - __main__ - ERROR - Failed to fetch weather data: HTTPSConnectionPool(host='weather.talkpython.fm', port=443): Max retries exceeded with url: /api/weather/?city=Berlin&country=DE (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
 2025-12-21 01:09:14,276 - __main__ - INFO - Token value: 1432
 2025-12-21 01:09:14,659 - __main__ - ERROR - Failed to fetch weather data: 429 Client Error: Too Many Requests for url: https://weather.talkpython.fm/api/weather?city=Berlin&country=DE
+2025-12-21 03:11:49,131 - __main__ - INFO - Token value: 1432
+2025-12-21 03:11:50,294 - __main__ - ERROR - Failed to fetch weather data: 429 Client Error: Too Many Requests for url: https://weather.talkpython.fm/api/weather?city=Berlin&country=DE
